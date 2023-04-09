@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html lang = "en">
+            <head>
+                <title>Project9_Countdown_Slideshow</title>
+                <meta charset = "utf-8"> 
+                <link rel = "stylesheet" type = "text/css" href = "./CSS/main.css">
+            </head>
+
+            <body>
+                <!--Countdown timer section-->
+                <p>How many seconds would you like to set your alarm for?</p>
+                <input id = "seconds" value = "">
+                <button onclick = "countdown()">Click here!</button>
+                <p id = "timer"></p>
+
+                <!--Slideshow container-->
+                <div class = "slideshow-container">
+
+                    <!--Full-width images with number and text caption-->
+                    <div class = "mySlides fade">
+                        <div class = "numbertext">1 / 4</div>
+                        <img src = "./Images/rock-of-cashel.jpg" style = "width : 100%" alt = "Rock of Cashel">
+                        <div class = "text">Rock of Cashel</div>
+                    </div>
+
+                    <div class = "mySlides fade">
+                        <div class = "numbertext">2 / 4</div>
+                        <img src = "./Images/giants-causeway.jpg" style = "width : 100%" alt = "Giants Causeway">
+                        <div class = "text">Giants Causeway</div>
+                    </div>
+
+                    <div class = "mySlides fade">
+                        <div class = "numbertext">3 / 4</div>
+                        <img src = "./Images/newgrange.jpg" style = "width : 100%" alt = "Newgrange">
+                        <div class = "text">Newgrange</div>
+                    </div>
+
+                    <div class = "mySlides fade">
+                        <div class = "numbertext">4 / 4</div>
+                        <img src = "./Images/cliffs-of-moher.jpg" style = "width : 100%" alt = "Cliffs of Moher">
+                        <div class = "text">Cliffs of Moher</div>
+                    </div>
+
+                    <!-- Next and Previous Buttons-->
+                    <a class = "prev" onclick = "plusSlides(-1)">&#10094</a>
+                    <a class = "next" onclick = "plusSlides(1)">&#10095</a>
+                </div>
+                <br>
+
+                <!-- The current section circles -->
+                <div style = "text-align:center">
+                    <span class = "dot" onclick = "currentSlide(1)"></span>
+                    <span class = "dot" onclick = "currentSlide(2)"></span>
+                    <span class = "dot" onclick = "currentSlide(3)"></span>
+                    <span class = "dot" onclick = "currentSlide(4)"></span>
+                </div>
+
+                <script src = "JS/main.js"></script>
+            </body>
+    </html>
